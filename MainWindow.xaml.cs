@@ -70,12 +70,14 @@ namespace WpfApp5
                         {
                             MessageBox.Show("Вы успешно вошли в систему!");
 
-                            // Здесь обычно открывают следующее окно программы
-                            // SecondWindow nextWindow = new SecondWindow();
-                            // nextWindow.Show();
-                            // this.Close(); 
+                           MessageBox.Show("Вы успешно вошли в систему!");
 
-                            return; // Выходим из метода, так как пользователь найден
+                            // Открываем второе окно
+                            SecondWindow nextWindow = new SecondWindow();
+                            nextWindow.Show();
+                            this.Close(); // Закрываем окно авторизации
+
+                            return;
                         }
                     }
                 }
